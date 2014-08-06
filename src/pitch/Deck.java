@@ -44,7 +44,8 @@ public class Deck {
         player = new Player[players];
         int k = 0;
         for(int i =0; i<numPlayers; i++){
-            player[i] = new Player(i); 
+            player[i] = new Player(i);
+ 
             for(int j =0; j<6; j++){                
                 player[i].hand[j] = deck[k];
                 deck[k] = null;
@@ -68,7 +69,7 @@ public class Deck {
         }
 =======
         
-        //fucks, i hope this works!
+        
         
         
 >>>>>>> origin/master
