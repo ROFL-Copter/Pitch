@@ -62,6 +62,7 @@ public class Deck {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     }//end Deal Deck
     void printDeck(){
         for (int i = 0; i<deck.length; i++) {
@@ -89,16 +90,21 @@ public class Deck {
 >>>>>>> parent of a41b110... 0.1.4D
 =======
 >>>>>>> parent of a41b110... 0.1.4D
+=======
+>>>>>>> parent of a41b110... 0.1.4D
         
         
         
         
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
         
         
         
         
+>>>>>>> parent of a41b110... 0.1.4D
+=======
 >>>>>>> parent of a41b110... 0.1.4D
 =======
 >>>>>>> parent of a41b110... 0.1.4D
