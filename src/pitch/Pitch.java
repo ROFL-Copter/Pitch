@@ -18,9 +18,10 @@ public class Pitch {
         // TODO code application logic here
         Deck deck = new Deck();
         deck.buildDeck();
+        deck.printDeck();
         deck.shuffle();
         deck.printDeck();
-        deck.dealDeck(4);
+        deck.dealDeck(3);
         deck.printDeck();
     }
 
