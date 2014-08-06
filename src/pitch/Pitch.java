@@ -24,5 +24,4 @@ public class Pitch {
         deck.printDeck();
         deck.printHands();
     }
-
 }
