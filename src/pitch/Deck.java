@@ -9,9 +9,8 @@ import java.util.Random;
 
 public class Deck {
     Card[] deck = new Card[52];
-    int players = 0;
-    Player[] player = new Player[players]; 
-    
+    int players = 4;
+    Player[] player = new Player[players];
     
     void buildDeck(){
         for (int i = 0; i<13; i++){ //Build Spade
@@ -63,11 +62,10 @@ public class Deck {
     }// End print Deck
     void printHand(int order){
         for (int i = 0; i<players; i++) {
-        if(player[i] !=null){
-        System.out.println((i+1) + "\t" + player[i].order + "\t" + player[i].hand[i].suit);
+            if(player[i] !=null){
+            System.out.println((i+1) + "\t" + player[i].order + "\t" + player[i].hand[i].suit);
+            }
         }
-    }
-    System.out.println();    
-    }
-        
+        System.out.println();    
+    } 
 }//end Deck
