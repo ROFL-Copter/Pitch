@@ -20,7 +20,8 @@ public class Pitch {
         deck.buildDeck();
         deck.shuffle();
         deck.printDeck();
-        deck.
+        deck.dealDeck(4);
+        deck.printDeck();
     }
 
 }
