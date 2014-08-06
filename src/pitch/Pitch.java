@@ -23,9 +23,6 @@ public class Pitch {
         deck.dealDeck(4);
         deck.printDeck();
         deck.printHands();
-        
-        
-        //i changed this
     }
 
 }
