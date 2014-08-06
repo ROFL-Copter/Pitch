@@ -19,9 +19,7 @@ public class Pitch {
         Deck deck = new Deck();
         deck.buildDeck();
         deck.shuffle();
-        deck.printDeck();
         deck.dealDeck(4);
-        deck.printDeck();
         deck.printHands();
     }
 }
