@@ -9,9 +9,7 @@ import java.util.Random;
 
 public class Deck {
     Card[] deck = new Card[52];
-    int players = 0;
-    Player[] player = new Player[players]; 
-    
+    int players = 4;
     
     void buildDeck(){
         for (int i = 0; i<13; i++){ //Build Spade
@@ -39,9 +37,17 @@ public class Deck {
         }
         deck = tempDeck;
     }
+    void printDeck(){
+        for (int i = 0; i<deck.length; i++) {
+            if(deck[i] !=null){
+            System.out.println((i+1) + "\t" + deck[i].value + "\t" + deck[i].suit);
+            }
+        }
+        System.out.println();
+    }
     void dealDeck(int players){
         int numPlayers = players;
-        player = new Player[players];
+        Player[] player = new Player[players];
         int k = 0;
         for(int i =0; i<numPlayers; i++){
             player[i] = new Player(i);
@@ -52,6 +58,7 @@ public class Deck {
                 k++;
                 }
         }
+<<<<<<< HEAD
 <<<<<<< HEAD
     }//end Deal Deck
     void printDeck(){
@@ -76,5 +83,15 @@ public class Deck {
     }
     System.out.println();    
     }
+=======
+>>>>>>> parent of a41b110... 0.1.4D
         
+        
+        
+        
+    }
+    
+    
+    
+    
 }//end Deck
