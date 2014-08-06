@@ -23,6 +23,9 @@ public class Pitch {
         deck.printDeck();
         deck.dealDeck(3);
         deck.printDeck();
+        deck.printHand(0);
+        deck.printHand(1);
+        deck.printHand(2);
     }
 
 }
