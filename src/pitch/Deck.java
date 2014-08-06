@@ -9,8 +9,8 @@ import java.util.Random;
 
 public class Deck {
     Card[] deck = new Card[52];
-    int players = 0;
-    Player[] player = new Player[players]; 
+    int numPlayers = 0;
+    Player[] player = new Player[numPlayers]; 
     
     
     void buildDeck(){
@@ -40,7 +40,7 @@ public class Deck {
         deck = tempDeck;
     }
     void dealDeck(int players){
-        int numPlayers = players;
+        numPlayers = players;
         player = new Player[players];
         int k = 0;
         for(int i =0; i<numPlayers; i++){
@@ -61,10 +61,13 @@ public class Deck {
         }
         System.out.println();
     }// End print Deck
-    void printHand(int order){
-        for (int i = 0; i<players; i++) {
+    void printHands(){
+        for (int i = 0; i<numPlayers; i++) {
         if(player[i] !=null){
-        System.out.println((i+1) + "\t" + player[i].order + "\t" + player[i].hand[i].suit);
+            System.out.println("Player\t" + (i+1));
+            for(int j = 0; j<player[i].hand.length; j++){
+                System.out.println(player[i].hand[j].value +"\t" +player[i].hand[j].suit);
+            }
         }
     }
     System.out.println();    
