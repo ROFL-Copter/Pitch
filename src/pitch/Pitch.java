@@ -16,7 +16,11 @@ public class Pitch {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-    Deal deal = new Deal(4);
+        Deck deck = new Deck();
+        deck.buildDeck();
+        deck.shuffle();
+        deck.printDeck();
+        deck.
     }
 
 }

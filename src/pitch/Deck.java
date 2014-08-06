@@ -55,5 +55,13 @@ public class Deck {
                 player[i].hand[j] = deck[j];
                 }
         }
+        
+        
+        
+        
     }
+    
+    
+    
+    
 }//end Deck
