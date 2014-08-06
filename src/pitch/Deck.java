@@ -10,6 +10,7 @@ import java.util.Random;
 public class Deck {
     Card[] deck = new Card[52];
     int players = 4;
+    Player[] player = new Player[players];
     
     void buildDeck(){
         for (int i = 0; i<13; i++){ //Build Spade
@@ -37,17 +38,9 @@ public class Deck {
         }
         deck = tempDeck;
     }
-    void printDeck(){
-        for (int i = 0; i<deck.length; i++) {
-            if(deck[i] !=null){
-            System.out.println((i+1) + "\t" + deck[i].value + "\t" + deck[i].suit);
-            }
-        }
-        System.out.println();
-    }
     void dealDeck(int players){
         int numPlayers = players;
-        Player[] player = new Player[players];
+        player = new Player[players];
         int k = 0;
         for(int i =0; i<numPlayers; i++){
             player[i] = new Player(i);
@@ -63,6 +56,9 @@ public class Deck {
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/master
     }//end Deal Deck
     void printDeck(){
         for (int i = 0; i<deck.length; i++) {
@@ -74,9 +70,11 @@ public class Deck {
     }// End print Deck
     void printHand(int order){
         for (int i = 0; i<players; i++) {
-        if(player[i] !=null){
-        System.out.println((i+1) + "\t" + player[i].order + "\t" + player[i].hand[i].suit);
+            if(player[i] !=null){
+            System.out.println((i+1) + "\t" + player[i].order + "\t" + player[i].hand[i].suit);
+            }
         }
+<<<<<<< HEAD
 =======
         
         
@@ -113,4 +111,8 @@ public class Deck {
     
     
     
+=======
+        System.out.println();    
+    } 
+>>>>>>> origin/master
 }//end Deck
