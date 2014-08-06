@@ -44,14 +44,14 @@ public class Deck {
         player = new Player[players];
         int k = 0;
         for(int i =0; i<numPlayers; i++){
-            player[i] = new Player(i);
- 
+            player[i] = new Player(i); 
             for(int j =0; j<6; j++){                
                 player[i].hand[j] = deck[k];
                 deck[k] = null;
                 k++;
                 }
         }
+<<<<<<< HEAD
     }//end Deal Deck
     void printDeck(){
         for (int i = 0; i<deck.length; i++) {
@@ -66,6 +66,12 @@ public class Deck {
         if(player[i] !=null){
         System.out.println((i+1) + "\t" + player[i].order + "\t" + player[i].hand[i].suit);
         }
+=======
+        
+        //fucks, i hope this works!
+        
+        
+>>>>>>> origin/master
     }
     System.out.println();    
     }
