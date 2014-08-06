@@ -40,19 +40,22 @@ public class Deck {
     void printDeck(){
         for (int i = 0; i<deck.length; i++) {
             if(deck[i] !=null){
-            System.out.println(deck[i].value + "\t" + deck[i].suit);
+            System.out.println((i+1) + "\t" + deck[i].value + "\t" + deck[i].suit);
             }
         }
         System.out.println();
     }
     void dealDeck(int players){
-        int numPlayers = 0;
+        int numPlayers = players;
         Player[] player = new Player[players];
-        
+        int k = 0;
         for(int i =0; i<numPlayers; i++){
             player[i] = new Player(i);
-            for(int j =0; j<6; j++){
-                player[i].hand[j] = deck[j];
+ 
+            for(int j =0; j<6; j++){                
+                player[i].hand[j] = deck[k];
+                deck[k] = null;
+                k++;
                 }
         }
         

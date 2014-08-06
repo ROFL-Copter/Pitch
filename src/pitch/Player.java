@@ -5,7 +5,7 @@ package pitch;
  */
 
 public class Player {
-    Card[] hand;
+    Card[] hand = new Card[6];
     int order;
     
     Player(int order){
