@@ -13,21 +13,27 @@ public class Deck {
     Player[] player = new Player[numPlayers]; 
     
     
-    void buildDeck(){
-        for (int i = 0; i<13; i++){ //Build Spade
-            deck[i] = new Card(i+1, "Spades");            
-        } //End Spade
-        for (int i = 0; i<13; i++){ //Build Club
-            deck[i+13] = new Card(i+1, "Clubs");
-        } //End Club
-        for (int i = 0; i<13; i++){ //Build Heart
-            deck[i+26] = new Card(i+1, "Hearts");
-        } //End Heart
-        for (int i = 0; i<13; i++){ //Build Diamond
-            deck[i+39] = new Card(i+1, "Diamonds");
-        } //End Diamond
-    }//End BuildDeck
-    
+//    void buildDeck(){
+//        for (int i = 0; i<13; i++){ //Build Spade
+//            deck[i] = new Card(i, "Spades");            
+//        } //End Spade
+//        for (int i = 0; i<13; i++){ //Build Club
+//            deck[i+13] = new Card(i+1, "Clubs");
+//        } //End Club
+//        for (int i = 0; i<13; i++){ //Build Heart
+//            deck[i+26] = new Card(i+1, "Hearts");
+//        } //End Heart
+//        for (int i = 0; i<13; i++){ //Build Diamond
+//            deck[i+39] = new Card(i+1, "Diamonds");
+//        } //End Diamond
+//    }//End BuildDeck
+        void builDeck2(){
+            for (Suit s : Suit.values()) {
+                for (Rank r : Rank.values()) {
+                    Card c = new Card(r,s);
+                }  
+            }
+        }
     void shuffle(){
         Card[] tempDeck = new Card[52];
         Random rand = new Random();
@@ -56,7 +62,7 @@ public class Deck {
     void printDeck(){
         for (int i = 0; i<deck.length; i++) {
             if(deck[i] !=null){
-            System.out.println((i+1) + "\t" + deck[i].value + "\t" + deck[i].suit);
+            System.out.println((i+1) + "\t" + deck[i].rank + "\t" + deck[i].suit);
             }
         }
         System.out.println();
@@ -65,9 +71,12 @@ public class Deck {
         for (int i = 0; i<numPlayers; i++) {
         if(player[i] !=null){
             System.out.println("Player\t" + (i+1));
-            for(int j = 0; j<player[i].hand.length; j++){
-                System.out.println(player[i].hand[j].value +"\t" +player[i].hand[j].suit);
+            for (Card hand : player[i].hand) {
+                System.out.println(hand.rank + "\t" + hand.suit);
             }
+//            for(int j = 0; j<player[i].hand.length; j++){  // non-enhanced for-loop
+//                System.out.println(player[i].hand[j].rank +"\t" +player[i].hand[j].suit);
+//            }
         }
     }
     System.out.println();    
