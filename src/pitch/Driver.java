@@ -9,7 +9,7 @@ package pitch;
  * @version : Aug 4, 2014
  */
 
-public class Pitch {
+public class Driver {
 
     /**
      * @param args the command line arguments
@@ -18,9 +18,5 @@ public class Pitch {
         // TODO code application logic here
         Play play = new Play();
         play.play();
-        
-        for(int i = 0; i<play.numPlayers; i++){
-            play.player[i].printHand();
-        }
     }
 }

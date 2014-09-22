@@ -22,8 +22,7 @@ public class Card {
     QUEEN,
     KING,
     ACE,
-    }
-    
+    }  
     public enum Suit {
     SPADES, 
     HEARTS, 
